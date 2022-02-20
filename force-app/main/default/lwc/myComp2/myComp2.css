@@ -1,0 +1,9 @@
+:host {
+    background: blue;
+    color: cyan;
+}
+
+:host(.active) {
+    background: green;
+    color: brown;
+}

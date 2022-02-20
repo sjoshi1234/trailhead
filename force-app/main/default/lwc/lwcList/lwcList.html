@@ -1,0 +1,34 @@
+<template>
+    <div style="width:200px">
+        <lightning-card title="List of Users">
+        </lightning-card>
+        <ul class="slds-has-dividers_around-space slds-p-around_medium">
+        <!-- <template for:each={user} for:item="u">
+            
+             <li key={u.Id} class="slds-item">{u.Name}</li> 
+        </template> -->
+        
+        <!-- <template iterator:u={user}>
+            
+             <li key={u.value.Id} class="slds-item">{u.value.Name}</li> 
+        </template> -->
+
+        <template iterator:u={user}>
+            <li key={u.value.Id} class="slds-item">
+                <span if:true={u.first} style="color:aqua">
+                    {u.value.Name}
+                </span>
+                <span if:false={u.first} style="color:rgb(165, 42, 134)">
+                    <span if:false={u.last} style="color:rgb(165, 29, 29)">
+                        {u.value.Name}
+                    </span>
+                </span>
+                <span if:true={u.last} style="color:blue ">
+                    {u.value.Name}
+                </span>
+            </li> 
+       </template>
+        
+    </ul>
+    </div>
+</template>

@@ -1,0 +1,17 @@
+/* https://www.lightningdesignsystem.com/design-tokens/#category-background-color */
+/* From the design token get the Global ones (GA)
+for example if background colour is color-background-inverse
+then upu specify it as var(--lwc-camelCase) */
+
+.my-class-1 {
+background :  var(--lwc-colorBackgroundInverse);
+color : var(--lwc-colorTextInverse); 
+}
+
+/* Create Lightning Tokens from developer console and name it as defaultTokens
+the first token has to be of name defaultTokens */
+
+.my-class-2 {
+    background :  var(--c-mybackgroundColor);
+    color : var(--c-myTextColor); 
+    }

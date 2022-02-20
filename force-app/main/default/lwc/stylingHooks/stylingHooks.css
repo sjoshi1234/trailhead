@@ -1,0 +1,11 @@
+.Custom-badge-second {
+    --slds-c-badge-color-background : red;
+}
+
+.custom-button1 {
+    --slds-c-button-destructive-color-background : green;
+}
+
+.my-progress-bar{
+    background-color: red;
+}

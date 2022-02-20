@@ -1,0 +1,15 @@
+<template>
+    <div class={classToggle}>
+        <lightning-button-icon icon-name={iconName}  variant="bare" alternative-text="Settings" title="Settings" onclick={toggleMe}></lightning-button-icon>
+        <div>
+            <div class="slds-summary-detail__title">
+                <h3 class="slds-text-heading_small slds-truncate" title="summary title">{title}</h3>
+            </div>
+
+            <div aria-hidden="false" class="slds-summary-detail__content" id="expando-unique-id">
+                <p>{description}</p>
+            </div>
+        </div>
+    </div>
+    
+</template>

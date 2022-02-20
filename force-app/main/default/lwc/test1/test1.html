@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title={text} icon-name="custom:custom11">
+        <div class="slds-m-around_medium">
+            <p>{user.fname} {user.lname} {location}</p>
+            <lightning-input label="Your response" value={text} onchange={handleChange}></lightning-input>
+            <lightning-button label="Click" onclick={changeName} ></lightning-button>
+        </div>
+    </lightning-card>
+</template>

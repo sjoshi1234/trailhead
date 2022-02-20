@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Welcome!">
+
+    </lightning-card>
+    <lightning-button label={text} onclick={checkStatus}></lightning-button>
+    <div class="slds-m-around_large" title={Name}>
+
+    </div>
+    <template if:true={showHide}>
+        <p>{Title}</p>
+    </template>
+    
+</template>
