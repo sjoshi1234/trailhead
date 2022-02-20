@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="I am on Parent">
+    <p>{vara}</p>
+    <br />
+    <br />
+    <p>{varb}</p>
+    <c-ctopchild onbuttonclick={handleMe}></c-ctopchild>
+    <lightning-button
+      label="Set Parent Value"
+      onclick={parentValue}
+    ></lightning-button>
+  </lightning-card>
+</template>
